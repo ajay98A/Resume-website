@@ -1,0 +1,401 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.main-page {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/back2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.profile-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.profile-image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-image h1 {
+  font-weight: bold;
+  font-size: 32px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-left: 17px;
+  margin-bottom: 10px;
+}
+
+.profile-image p {
+  font-weight: bold;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+  margin-top: 10px;
+  margin-left: 15px;
+  margin-bottom: 10px;
+}
+
+.scroll-btn {
+  display: inline-block;
+  bottom: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 2px solid #fff;
+  padding: 10px 10px 20px;
+  border-radius: 30px;
+}
+
+.scroll-bar a {
+  border: 2px solid #fff;
+  font-size: 10px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.scroll-bar {
+  animation: mover 1s infinite alternate;
+}
+
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(10px);
+  }
+}
+
+/* About me */
+
+.about {
+  padding: 50px 20px;
+  margin: 10px 10px;
+  margin-bottom: -134px;
+}
+
+.profile-image-2 {
+  height: 400px;
+  width: auto;
+  border: 5px solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px 20px 5px;
+}
+
+.nav-bar {
+  top: 0;
+  position: sticky;
+  z-index: 2;
+}
+.navbar {
+  background-color: #000;
+}
+
+.navbar-brand img {
+  width: 50px;
+}
+
+.col-md-6 p {
+  margin-left: 5px;
+}
+
+.col-md-6 h3 {
+  margin-top: 50px;
+  margin-bottom: 15px;
+  margin-left: 5px;
+}
+
+.fa {
+  font-size: 25px;
+  color: #fff;
+}
+
+.navbar-nav {
+  text-align: right;
+  float: right;
+}
+
+.nav-item .nav-link {
+  color: #fff;
+}
+
+/* Tech Skills */
+
+#tech-skills {
+  margin-left: 5px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.skills-bar {
+  margin-left: 5px;
+}
+
+.progress {
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+.progress-bar {
+  border-radius: 16px;
+  background: #fca757 !important;
+}
+
+/* Educational-background */
+
+.education-main {
+  margin-top: -100px;
+  background: #f9f9f9;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.social-sticky {
+  top: 50%;
+  transform: translateY(-50%);
+  position: sticky;
+  z-index: 1;
+  width: 80px;
+}
+
+.social-sticky ul {
+  list-style: none;
+  padding: initial;
+}
+
+.social-sticky ul li {
+  height: 40px;
+  width: 40px;
+  padding-left: 12px;
+  padding-top: 6px;
+  margin-top: 5px;
+  background: #000;
+}
+
+.social-sticky ul li:hover {
+  padding-left: 30px;
+  width: 80px;
+  transition: 1s;
+}
+
+.education-main h3 {
+  padding-bottom: 40px;
+}
+
+.timeline {
+  list-style-type: none;
+  position: relative;
+}
+
+.timeline:before {
+  background: #555;
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  width: 2px;
+  height: 100%;
+  z-index: 1;
+  margin-left: 100px;
+}
+
+.timeline li {
+  margin-left: 100px;
+  padding: 5px 5px;
+  line-height: 25px;
+  background: #fff;
+}
+
+.timeline li h4 {
+  background-color: #000;
+  padding: 5px 0px 5px 20px;
+  color: #fff;
+  font-size: 15px;
+}
+
+.timeline li:before {
+  content: "";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #000;
+  left: 101px;
+  width: 20px;
+  height: 20px;
+  z-index: 1;
+}
+
+.timeline .work-experience {
+  margin-left: 5px;
+}
+
+.timeline #year {
+  color: #ccc;
+}
+/* Projects */
+.penn,
+.starr {
+  color: #000;
+}
+
+.projects {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.projects h2 {
+  margin-bottom: 35px;
+}
+
+.services-box {
+  background: #f9f9f9;
+  padding: 10px;
+  margin-top: 20px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+}
+
+.services-box .fa {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.services-box span {
+  margin: 3px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.services-box p {
+  font-size: 15px;
+  margin-top: 20px;
+  color: #777;
+}
+.services-box:hover {
+  background: #000;
+  color: #fff;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  transition: 1s;
+}
+
+.services-box:hover p {
+  color: #fff;
+}
+
+.services-box:hover .fa {
+  color: #fff;
+}
+/* contact page */
+
+.contact {
+  padding-top: 50px;
+  margin-bottom: 100px;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: #fff;
+}
+.contact h2,
+p {
+  padding-right: 20px;
+}
+
+.contact .icons {
+  width: 100%;
+}
+.contact li {
+  display: inline;
+  padding-right: 50px;
+}
+
+.contact p a {
+  text-decoration: none;
+  font-family: Cambria, Cochin;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: 1px underline dashed;
+}
+
+.contact p {
+  margin-bottom: 30px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.buttons .btn {
+  border-radius: 20px;
+  padding: 10px 25px 10px 25px;
+  margin: 5px;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+}
+
+.buttons .btn-primary:focus {
+  box-shadow: none !important;
+  outline: none !important;
+}
+
+.buttons .btn:hover {
+  border: 2px solid #000 !important;
+  background: #000 !important;
+  transition: 0.6s;
+}
+
+.buttons .btn .fa {
+  margin-right: 10px;
+}
+/* Footer */
+
+.footer-class {
+  background: #000;
+  height: 70px;
+  margin-top: 50px;
+  color: #fff;
+  padding-top: 10px;
+}
+
+#hearts {
+  color: red;
+}
+
+.footer-class .fa {
+  color: #fff;
+}
+
+.footer-class ul {
+  list-style-type: none;
+  padding-left: 50px;
+}
+
+.footer-class li {
+  display: inline;
+  padding-right: 50px;
+}
+
+#para-foot {
+  display: inline-block;
+  margin-bottom: 10px;
+}
